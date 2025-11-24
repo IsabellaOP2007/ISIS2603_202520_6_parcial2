@@ -1,0 +1,11 @@
+<div *ngFor="let c of canciones" style="border:1px solid #ddd; padding:10px; margin-bottom:10px;">
+  
+  <div style="display:flex; justify-content: space-between;">
+    <span>{{ c.number }} - {{ c.title }} ({{ c.duration }})</span>
+
+    <span (click)="amar(c.id)" style="cursor:pointer; font-size:20px;">
+      {{ c.favorite ? '❤️' : '🤍' }}
+    </span>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div *ngFor="let al of albumes" style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+  
+  <img [src]="al.cover" style="width:80px; height:80px; border-radius:5px;">
+  
+  <h3>{{ al.title }}</h3>
+  <p>{{ al.year }}</p>
+  <p>Tracks: {{ al.trackCount }}</p>
+
+  <button (click)="abrir(al.id)">Open tracks</button>
+
+  <span (click)="amar(al.id)" style="cursor:pointer; font-size:20px;">
+    {{ al.favorite ? '❤️' : '🤍' }}
+  </span>
+
+</div>

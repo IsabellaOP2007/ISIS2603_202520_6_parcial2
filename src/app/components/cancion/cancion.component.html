@@ -1,0 +1,7 @@
+<div>
+  {{ cancion.number }} - {{ cancion.title }} ({{ cancion.duration }})
+
+  <span (click)="amar()" style="cursor:pointer; font-size:20px;">
+    {{ cancion.favorite ? '❤️' : '🤍' }}
+  </span>
+</div>
