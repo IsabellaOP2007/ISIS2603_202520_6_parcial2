@@ -1,3 +1,6 @@
+#Cambios con respecto al enunciado
+Tuve que poner un par de atributos en algunas clases y agregar una clase de mas para listar
+
 # FrontendExamen2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
